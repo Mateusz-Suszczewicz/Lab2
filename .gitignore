@@ -1,0 +1,95 @@
+# ========================================
+# 🧱 Globalny .gitignore dla projektu ToDo
+# ========================================
+
+# --- System / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+
+# --- Python / FastAPI (backend) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.env
+venv/
+env/
+.venv/
+.mypy_cache/
+.pytest_cache/
+coverage/
+*.egg-info/
+*.eggs/
+
+# --- Node.js / Next.js (frontend) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.next/
+out/
+dist/
+.cache/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Docker ---
+*.pid
+*.seed
+*.tar
+*.gz
+*.tgz
+*.bak
+*.swp
+*.swo
+docker-compose.override.yml
+**/tmp/
+**/__pycache__/
+**/.pytest_cache/
+
+# --- Build / OS ---
+*.exe
+*.dll
+*.so
+*.dylib
+*.lock
+*.zip
+*.tar.gz
+*.7z
+
+# --- PostgreSQL (kontener) ---
+pgdata/
+db_data/
+*.sql~
+*.dump
+*.backup
+
+# --- Miscellaneous ---
+# Logi, raporty, testowe pliki
+logs/
+*.log
+*.csv
+*.xlsx
+*.json~
+*.xml~
+
+# --- Mac / Windows metadata ---
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Local configuration ---
+# (Twoje lokalne ustawienia Dockera, np. volume z bazy)
+**/.env
+.env.*
+!.env.example
